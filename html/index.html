@@ -5,8 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <script>
+
+        function init() {
+
+            let userProfile = {
+            name: "Ladhi Kahlon",
+            email: "mymail@mailID.com",
+            gender: ["Male", "Female"]
+            };
+
+            window.document.getElementById("name").innerHTML = userProfile.name;
+            document.getElementById("email").innerHTML = userProfile.email;
+            document.getElementById("gender").innerHTML = userProfile.gender[0];
+
+            let hobbies = ["Cricket", "Soccer", "Basketball", "Baseball", "Football"]
+
+            let hobbieList = "<ul>";
+
+            for (let index = 0; index < hobbies.length; index++) {
+                const element = hobbies[index];
+
+                hobbieList += '<li>';
+                hobbieList += element;
+                hobbieList += '</li>';
+            }
+            
+            hobbieList += "</ul>";
+
+            document.getElementById("hobbies").innerHTML = hobbieList;
+        }
+    
+    </script>
 </head>
-<body>
+<body onload="init()">
+
+    <div id="name"></div>
+    <div id="email"></div>
+    <div id="gender"></div>
+    <div id="hobbies"></div>
     
 </body>
 </html>
