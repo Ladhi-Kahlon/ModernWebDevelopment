@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Basics of HTML, CSS and JavaScript</title>
+    <style>
+        div{
+            width: 300px;
+            padding: 10px;
+            border: 1px solid rgb(141, 139, 153);
+            background-color: #eeeeee;
+            color: blue;           
+        }
+        #name {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function init() {
+            me = {name: 'Ladhi',
+                  email: 'Ladhi@someemail.com'}
+
+            document.getElementById("name").innerHTML = me.name;
+            document.getElementById("email").innerHTML = me.email;
+
+            var hobbies = ["Walking", "Running", "Swiming"];
+
+            var outputString = '<ul>';
+
+            for (let index = 0; index < hobbies.length; index++) {
+                const element = hobbies[index];
+                
+                outputString += '<li>' + element + '</li>'
+            }
+            outputString += '</ul>';
+            document.getElementById("hobbies").innerHTML = outputString;
+        }  
+    </script>
+</head>
+<body onload="init()">
+
+        <div id="name"></div>
+        <div id="email"></div>
+        <div id="hobbies"></div>
+        
+</body>
+</html>
