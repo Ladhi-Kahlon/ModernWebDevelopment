@@ -1,0 +1,117 @@
+/* @import url('halloween.css'); */
+
+
+/* @import url('print.css') print; --will not catch ..*/
+
+
+/* @media screen { */
+
+    body{
+        color: red;
+        font-size: 100%;
+        background: rgb(214, 211, 231);
+    }
+
+    h1 {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 2em;
+
+        padding: 10px;
+    }
+
+    h2 {
+        color: green;
+        font-style: italic;
+        font-size: 1.7em;
+        /*css gradient*/
+        background: rgb(214, 211, 231);
+        /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(105,105,139,0.3225665266106442) 0%, rgba(39,172,212,1) 9%, rgba(0,212,255,0.43461134453781514) 100%);         */
+    
+        padding: 10px;
+    }
+
+    header {
+        color: rgb(214, 211, 231);
+        text-align: center;
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+        background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+        /* padding: 10px;        */
+        margin: auto;
+    }
+
+    footer {
+        font-weight: bold;
+        padding: 10px;
+    }
+ 
+    footer #linkHipSum {
+        background-image: url("../html/images/eagle.jpg");
+
+    }
+
+    article {
+        border-bottom: solid;
+        padding: 10px;
+    }
+    
+    header h2 {
+        color: black
+    }
+    
+    header h2, #hipster h2 span {
+        color: black
+    }
+      
+    p {
+        color: blue;
+        font-size: 18px;
+    }
+    
+    p.two {
+        color: black;
+        font: 15 px arial, bold, sans-serif;
+    }
+    
+/* } */
+
+nav {
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+nav a:link {
+    color: white;
+    background-color: red;
+}
+
+nav a:hover {
+        color: red;
+        background-color: white;
+}
+
+nav a:visited {
+    color: red;
+    background-color: white;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    width: 10px;
+    height: .8em;
+}
+
+li {
+    font-variant: small-caps;
+}
+
+
+
