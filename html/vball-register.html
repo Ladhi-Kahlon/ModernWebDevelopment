@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reister Form</title>
+</head>
+
+<body>
+    <form id="Register">
+        <h1>Register for Nerdy Volleyball Training Camp</h1>
+
+        <fieldset>
+            <legend>Personal Details:</legend>
+            <div>
+                <label>First Name *
+                    <input id="firstName" name="firstName" type="text" autofocus required>
+                </label>
+            </div>
+            <div> <label>Last Name *
+                    <input id="lastName" name="lastName" type="text" required>
+                </label>
+            </div>
+            <div>
+                <lablel>Date of Birth *
+                    <input id="dob" name="dob" type="date" required>
+                </lablel>
+            </div>
+            <div>
+                <label>Email *
+                    <input id="email" name="email" type="email" required>
+                </label>
+            </div>
+            <div>
+                <label>Password *
+                    <input id="pswd" name="pwd" type="password" required>
+                </label>
+            </div>
+            <div>
+                <lable>Repeat Password *
+                    <input id=rptPswd" name=rptPwd" type="password" required>
+                </lable>
+            </div>
+            <div>
+                <lable>Your Github URL
+                    <input id=gitHub" name=gitHub" type="url">
+                </lable>
+            </div>
+            <div>
+                <lable>Phone
+                    <input id=phn" name=phn" type="tel">
+                </lable>
+            </div>
+            <br>
+            <div>
+                <lable>Shoesize
+                    <input id=shoeSize" name=shoeSize" type="number" min="3" max="19" step="0.5" value="6">
+                </lable>
+            </div>
+            <div>
+                <lable>Skill Level (1 novice, 10 expert)
+                    <input id=skillInputId" name=rptPwd" type="range" min="1" max="10" step="1" value="5"
+                        oninput="skillOutputId.value = skillInputId.value">
+                    <output name="skillOutputDisplay" id="skillOutputId">5</output>
+                </lable>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>BillingAddress:</legend>
+            <div>
+                <label>Address *
+                    <textarea id="txtBox" name="txtBox" type="text" rows="3"></textarea>
+                </label>
+            </div>
+            <div>
+                <label>Postal Code *
+                    <input id="zipCode" name="zipCode" type="text">
+                </label>
+            </div>
+            <div>
+                <label>Country *
+                    <select name="country">
+                        <option value="">Country...</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="United States of America">United States of America</option>
+                        <option value="Uraguay">Uruguay</option>
+                        <option value="Uzbekistan">Uzbekistan</option>
+                        <option value="Vanuatu">Vanuatu</option>
+                        <option value="Vatican City State">Vatican City State</option>
+                        <option value="Venezuela">Venezuela</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
+                        <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
+                    </select>
+                </label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Card details</legend>
+            <fieldset>
+                <legend>Card type</legend>
+                <div class="card-type">
+                    <input id="visa" name="cardtype" type="radio">
+                    <label for="visa">VISA</label>
+                    <input id="mastercard" name="cardtype" type="radio">
+                    <label for="mastercard">Mastercard</label>
+                    <input id="amex" name="cardtype" type="radio">
+                    <label for="amex">AMEX</label>
+                </div>
+            </fieldset>
+            <div>
+                <label>Name *
+                    <input size="50" id="cardName" name="cardName" type="text">
+                </label>
+            </div>
+            <div>
+                <label>Card number *
+                    <input id="cardNo" width="80" name="cardNo" type="text"
+                        title="The sixteen digit number across the middle of your card.">
+                </label>
+            </div>
+            <div>
+                <label>Security code *
+                    <input id="security" name="security" type="text"
+                        title="The last three digits on the back of your card.">
+                </label>
+            </div>
+            <div>
+                <label>Expiry Date
+                    <input id="expiry" name="expiry" type="text">
+                </label>
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+
+</html>

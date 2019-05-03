@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adding jqry</title>
+    <style>
+        .highlight {background-color: yellow;}
+        /* .test {color: red;} */
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="scripts/jquery-3.3.1.js"></script> -->
+    <script>    window.jQuery ||
+            document.write('<script src="scripts/jquery-3.3.1.js"><\/script>');
+        /* Add jQuery code in the handler */
+        $(function () {
+            // alert('hello');
+            $('p').css('font-weight', 'bold');
+            $("#artists").css("color", "red");
+            $(".favorite").css('background-color', 'yellow');
+            $("ul").css({
+                width:400,
+                border: '2px dashed pink'
+            })
+            $("p:contains('DO NOT')").css('color','red');
+            $("tr:even").css('background-color', 'rgba(128,128,128,.5)');
+            $("#toggleli").click(function() {
+                $('li:even').toggleClass("highlight");
+            })
+            $('p').click(function() {
+                this.title = 'Paragrapth Title';
+            })
+            //immediate childers to tr
+            $('table > tbody > tr').click(function() {
+                $(this).css('background', '#66ff00');
+            })
+            //remove li that are clicked
+            $('li').click(function() {
+                // $('this').css('display', 'none');
+                $(this).remove();
+            })
+            //4.1
+            $('li.favorite').prepend("Favorite ");
+            $('li.favorite').append(" test!");
+            //4.2
+            $('li .test').css({
+                color: "Rred",
+                font: "bold"
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+
+    <button id="toggleli">Toggle Events</button>
+    <p>Things I Like to Do</p>
+    <ul>
+        <li>Wash Car</li>
+        <li>Finish Taxes</li>
+        <li>Vote</li>
+    </ul>
+    <p>Things I DO NOT Like to Do</p>
+    <ul>
+        <li>Wash Dishes</li>
+        <li class="favorite">Start Taxes<span class="test">sure</span></li>
+        <li>Go to the DMV</li>
+    </ul>
+
+    <table id="artists">
+        <tr>
+            <th>Artist</th>
+            <th>Genre</th>
+        </tr>
+        <tr>
+            <td>Stevie Wonder</td>
+            <td>Soul</td>
+        </tr>
+        <tr class="favorite">
+            <td>Stevie Wonder2</td>
+            <td>Soul2</td>
+        </tr>
+        <tr>
+            <td>Stevie Wonder3</td>
+            <td>Soul3</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
