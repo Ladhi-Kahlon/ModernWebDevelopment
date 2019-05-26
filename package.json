@@ -1,0 +1,22 @@
+{
+  "name": "modernwebdevelopment",
+  "version": "1.0.0",
+  "description": "Web Development Course",
+  "main": "index.js",
+  "scripts": {
+    "test": "welcome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ladhi-Kahlon/ModernWebDevelopment.git"
+  },
+  "keywords": [
+    "modernwebdevelopment"
+  ],
+  "author": "student",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ladhi-Kahlon/ModernWebDevelopment/issues"
+  },
+  "homepage": "https://github.com/Ladhi-Kahlon/ModernWebDevelopment#readme"
+}
